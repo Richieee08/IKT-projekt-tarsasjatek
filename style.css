@@ -1,7 +1,12 @@
 body{
-    width: 1500px;
+    background-image: url();
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.oldal{
+    background-color: white;
 }
 
 h1{
@@ -17,4 +22,44 @@ h2{
 
 p{
     text-indent: 30px;
+}
+
+#linkek{
+    text-align: center;
+    background-color: darkred;
+    line-height: 60px;
+}
+
+a:link{
+    color: white;
+    font: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: darkred;
+    background-color: #e4c1c1;
+    padding: 18px;
+    border-style: solid;
+    border-color: #bb5151;
+}
+
+a:active{
+    background-color: white;
+}
+
+.table{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.f1{
+    margin-left: 50px;
 }
