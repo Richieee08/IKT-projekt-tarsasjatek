@@ -1,0 +1,13 @@
+body{
+    background-color: yellow;
+    text-align: justify;
+}
+table, td {
+    text-align: center;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+img {
+    height: 100px;
+}
