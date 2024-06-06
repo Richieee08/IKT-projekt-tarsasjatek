@@ -4,151 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kérdés-Válasz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="kerdesvalasz.css">
 </head>
 <body>
-    <header id="linkek">
-        <a href=""></a>
-        
-    </header>
-
-    <section id="fej">
-        <h1 id="kv">Kérdés-Válasz</h1>
-    </section>
-
-    <main>
-    <h1>Témák: </h1>
+    <main class="oldal">
+        <header id="linkek">
+            <a href="fooldal.html">Főoldal</a>
+            <a href="kerdesvalasz.html">Kérdések</a>
+            <a href="Folyamat.html">Folyamat</a>
+        </header>
+    <h1>Kérdés-Válasz</h1>
+    <h2>Témák: </h2>
     <ul>
         <li>Sport</li>
         <li>Földrajz</li>
         <li>Történelem</li>
         <li>Matematika</li>
         <li>Nyelvtan</li>
-        <li>Természetismeret</li>
+        <li>Állatok</li>
         <li>Számítógép alkatrészek</li>
         <li>Ételek</li>
     </ul>
-    <p>Minden témából 3 könnyű, 3 közepes és 3 nehéz nehézségű kérdés van.</p>
+    
+    <p>Minden témából 3 könnyű, 3 közepes és 3 nehéz nehézségű kérdés van. A társasjáték mellé járó kérdések kártyáinál különböző színek jelölik a témákat.</p>
+
+    <div class="row m-3">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <img src="img/easy.gif" alt="Easy" style="width: 300px; height: 300px;">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <img src="img/medium.jpeg" alt="Medium"  style="width: 300px; height: 300px;">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <img src="img/hard.png" alt="Hard"  style="width: 300px; height: 300px;">
+        </div>
+    </div>
+<ul>
+        <li>Sport - zöld</li>
+        <li>Földrajz - élénk narancs</li>
+        <li>Történelem - narancs</li>
+        <li>Matematika - sötétkék</li>
+        <li>Nyelvtan - sárga</li>
+        <li>Állatok - szürke </li>
+        <li>Számítógép alkatrészek - világoskék</li>
+        <li>Ételek - piros</li>
+    </ul>
     <br>
-    <section class="accordion">
-        <input type="checkbox" name="collapse" id="handle1" checked="checked">
-        <h2 class="handle">
-          <label for="handle1">Sport</label>
-        </h2>
+
+    <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse" id="handle1" >
+            <h2 class="handle">
+                <label for="handle1">Sport</label>
+            </h2>
         <div class="content">
-          <p><table>
-            <tr>
-                <td colspan="3"><h2>Könnyű</h2></td>
-            </tr>
-            <tr>
-                <td>Mi a legnépszerűbb labdajáték a világon?</td>
-                <td>Labdarúgás</td>
-                <td><img src="img/Labdarúgás.jpeg" alt="Labdarúgás"></td>
-            </tr>
-            <tr>
-                <td>Hány játékos játszik a pályán egy csapatban kosárlabdában?</td>
-                <td>5</td>
-                <td><img src="img/Kosárlabda.jpg" alt="Kosárlabda csapat"></td>
-            </tr>
-            <tr>
-                <td>Hány évente rendezik meg az olimpiai játékokat?</td>
-                <td>4</td>
-                <td></td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-                <td colspan="3"><h2>Közepes</h2></td>
-            </tr>
-            <tr>
-                <td>Igaz vagy Hamis? A magyar labdarúgó-válogatott kétszer szerepelt a világbajnokság döntőjében.</td>
-                <td>Igaz</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Igaz vagy Hamis? Michael Jordan nyerte meg a legtöbbször az NBA-t. </td>
-                <td>Hamis</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Ki a leggyorsabb 100 méteres síkfutó a világon?</td>
-                <td>Usain Bolt</td>
-                <td></td>
-            </tr>
-            </table>
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <table>
+                    <tr>
+                        <td colspan="3"><h2>Könnyű</h2></td>
+                    </tr>
+                    <tr>
+                        <td>Mi a legnépszerűbb labdajáték a világon?</td>
+                        <td>Labdarúgás</td>
+                        <td><img src="img/Labdarúgás.jpeg" alt="Labdarúgás"></td>
+                    </tr>
+                    <tr>
+                        <td>Hány játékos van egy csapatban, kosárlabdában?</td>
+                        <td>5</td>
+                        <td><img src="img/Kosárlabda.jpg" alt="Kosárlabda csapat"></td>
+                    </tr>
+                    <tr>
+                        <td>Hány évente rendezik meg az olimpiai játékokat?</td>
+                        <td>4</td>
+                        <td><img src="img/olimpia.png" alt="Olimpia"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <table>
+                    <tr>
+                        <td colspan="3"><h2>Közepes</h2></td>
+                    </tr>
+                    <tr>
+                        <td>Igaz vagy hamis? A magyar labdarúgó-válogatott kétszer szerepelt a világbajnokság döntőjében.</td>
+                        <td>Igaz</td>
+                        <td><img src="img/aranycsapat.jpg" alt="Aranycsapat"></td>
+                    </tr>
+                    <tr>
+                        <td>Igaz vagy hamis? Michael Jordan nyerte meg a legtöbbször az NBA-t. </td>
+                        <td>Hamis</td>
+                        <td><img src="img/michaeljordan.webp" alt="Michael Jordan"></td>
+                    </tr>
+                    <tr>
+                        <td>Ki a leggyorsabb 100 méteres síkfutó a világon?</td>
+                        <td>Usain Bolt</td>
+                        <td><img src="img/síkfutás.jpg" alt="Síkfutók"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <table>
+                    <tr>
+                        <td colspan="3"><h2>Nehéz</h2></td>
+                    </tr>
+                    <tr>
+                        <td>Igaz vagy hamis? Cristiano Ronaldo-nak van a futball történelmében a legtöbb rekordja.</td>
+                        <td>Hamis</td>
+                        <td><img src="img/ronaldo.jpg" alt="Ronaldo"></td>
+                    </tr>
+                    <tr>
+                        <td>Melyik magyar sportoló tartja a legtöbb olimpiai aranyérem rekordját?</td>
+                        <td>Hosszú Katinka</td>
+                        <td><img src="img/aranyerem.jpg" alt="Aranyérem"></td>
+                    </tr>
+                    <tr>
+                        <td>Milyen nemzetiségű Novak Djokovic, profi teniszező?</td>
+                        <td>Szerb</td>
+                        <td><img src="img/novak.jpg" alt="Novak Djokovic"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+      </section>
+</div>
+<div class="col-lg-4">
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse2" id="handle2" >
+            <h2 class="handle">
+                <label for="handle2">Földrajz</label>
+            </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
             <table>
             <tr>
-                <td colspan="3"><h2>Nehéz</h2></td>
-            </tr>
-            <tr>
-                <td>Igaz vagy Hamis? Cristiano Ronaldo-nak van a futball történelmében a legtöbb rekordja.</td>
-                <td>Hamis</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Melyik magyar sportoló tartja a legtöbb olimpiai aranyérem rekordját?</td>
-                <td>Hosszú Katinka</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Milyen nemzetiségű Novak Djokovic, profi teniszező?</td>
-                <td>Szerb</td>
-                <td></td>
-            </tr>
-            </table>
-          </table>
-        </div>
-      </section>
-
-      <section class="accordion">
-        <input type="checkbox" name="collapse2" id="handle2" checked="checked">
-        <h2 class="handle">
-          <label for="handle2">Földrajz</label>
-        </h2>
-        <div class="content">
-          <p><table>
-            <tr>
                 <td colspan="3"><h2>Könnyű</h2></td>
             </tr>
             <tr>
-                <td>Melyik kontinensen helyezkedi el Egyiptom? </td>
+                <td>Melyik kontinensen helyezkedik el Egyiptom? </td>
                 <td>Afrika</td>
-                <td></td>
+                <td><img src="img/afrika.svg" alt="Afrika"></td>
             </tr>
             <tr>
                 <td>Mi a világ legmagasabb hegycsúcsa? </td>
                 <td>Mount Everest</td>
-                <td></td>
+                <td><img src="img/mount everest.jpg" alt="Mount Everest"></td>
             </tr>
             <tr>
                 <td>Melyik a legnagyobb ország Európában?</td>
                 <td>Oroszország</td>
-                <td></td>
+                <td><img src="img/oroszország.png" alt="Oroszország"></td>
             </tr>
-            <tr>
-                <td><h2>Közepes</h2></td>
-            </tr>
-          </table>
+          </table></div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
           <table>
             <tr>
                 <td colspan="3"><h2>Közepes</h2></td>
             </tr>
             <tr>
-                <td>Igaz vagy Hamis? Szlovénia fővárosa Ljubjana?</td>
+                <td>Igaz vagy hamis? Szlovénia fővárosa Ljubjana?</td>
                 <td>Igaz</td>
-                <td></td>
+                <td><img src="img/Flag_of_Slovenia.png" alt="Szlovénia"></td>
             </tr>
             <tr>
                 <td>Melyik országnak van a legnagyobb területe Észak-Amerikában? </td>
                 <td>Kanada</td>
-                <td></td>
+                <td><img src="img/flag of canada.svg" alt="Kanada"></td>
             </tr>
             <tr>
                 <td>Melyik kontinensen helyezkedik el Chile?</td>
                 <td>Dél-Amerika</td>
-                <td></td>
+                <td><img src="img/Flag_of_Chile.svg.png" alt="Chile"></td>
             </tr>
             </table>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
             <table>
             <tr>
                 <td colspan="3"><h2>Nehéz</h2></td>
@@ -156,25 +188,473 @@
             <tr>
                 <td>Mi Brazília fővárosa?</td>
                 <td>Brasília</td>
-                <td></td>
+                <td><img src="img/brazil.webp" alt="Brazília"></td>
             </tr>
             <tr>
-                <td>Igaz vagy Hamis? Kínának van a legnagyobb népsűrűsége. </td>
+                <td>Igaz vagy hamis? Kínának van a legnagyobb népsűrűsége. </td>
                 <td>Hamis</td>
-                <td></td>
+                <td><img src="img/kína.png" alt="Kína"></td>
             </tr>
             <tr>
-                <td>Igaz vagy Hamis? San Marino a legkisebb ország a világon. </td>
+                <td>Igaz vagy hamis? San Marino a legkisebb ország a világon. </td>
                 <td>Hamis</td>
-                <td></td>
+                <td><img src="img/Flag_of_San_Marino.svg.png" alt="San Marino"></td>
             </tr>
             </table>
-          </table>
+                    </div>
         </div>
-      </section>
-      <section class="accordion">
-        <input type="checkbox" name="collapse2" id="handle2">
+    </div>
+      </section></div>
+
+      <div class="col-lg-4">
+
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse3" id="handle3" >
         <h2 class="handle">
-          </main>
+            <label for="handle3">Történelem</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Az első világháború 1914-ben kezdődött.</td>
+                    <td>Igaz</td>
+                    <td><img src="img/ww1.jpg" alt="WW1"></td>
+                </tr>
+                <tr>
+                    <td>Mikor koronázták meg Szent Istvánt?</td>
+                    <td>1000</td>
+                    <td><img src="img/szentistvan.jpg" alt="Szent István"></td>
+                </tr>
+                <tr>
+                    <td>Minek az áldozata lett John F. Kennedy 1963-ban?</td>
+                    <td>Merénylet</td>
+                    <td><img src="img/john.jpg" alt="John F. Kennedy"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>Mikor volt a trianoni békeszerződés?</td>
+                    <td>1920</td>
+                    <td><img src="img/Trianonmap.jpg" alt="Trianon"></td>
+                </tr>
+                <tr>
+                    <td>igaz vagy hamis? A középkor elejét 476, az Kelet-Római Birodalom bukása jelenti.</td>
+                    <td>Hamis</td>
+                    <td><img src="img/keletroma.png" alt="Kelet-Római Birodalom"></td>
+                </tr>
+                <tr>
+                    <td>Könyves Kálmán kinek a fia volt? </td>
+                    <td>Szent László</td>
+                    <td><img src="img/konyves.jpg" alt="Könyves Kálmán"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Mi volt az első keresztény állam? </td>
+                    <td>Római Birodalom</td>
+                    <td><img src="img/romaibirodalom.png" alt="Római Birodalom"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Az oroszok 1991-ben távoztak el váratlanul Magyarországról.</td>
+                    <td>Igaz</td>
+                    <td><img src="img/oroszország.png" alt="Oroszország"></td>
+                </tr>
+                <tr>
+                    <td>Mi az első világháborút lezáró békeszerződés? </td>
+                    <td>Versailles-i</td>
+                    <td><img src="img/versailles.jpg" alt="Versailles"></td>
+                </tr>
+            </table></div>
+        </div>
+    </div>
+      </section></div>
+
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse4" id="handle4" >
+        <h2 class="handle">
+            <label for="handle4">Matematika</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2></td>
+                </tr>
+                <tr>
+                    <td>Mennyi PI értéke? </td>
+                    <td>3,14</td>
+                    <td><img src="img/Pi-symbol.svg.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A prímszámoknak pontosan 2 osztójuk van. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/prím.png" alt="Prímszámok"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? 0-val lehet osztani.</td>
+                    <td>Hamis</td>
+                    <td><img src="img/0.png" alt="0"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>Milyen zárójelet használunk intervallumoknál? </td>
+                    <td>szögletes zárójel</td>
+                    <td><img src="img/szöglet.jpg" alt="Szögletes zárójel"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Bármely szám 0-ik hatványa önmaga.</td>
+                    <td>Hamis</td>
+                    <td><img src="img/hatvany.png" alt="Hatvány"></td>
+                </tr>
+                <tr>
+                    <td>Mennyi 8 osztva 5-tel?</td>
+                    <td>1,6</td>
+                    <td><img src="img/8-5.png" alt="8/5"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Hogyan számoljuk a kör kerületét? </td>
+                    <td>2r x pi</td>
+                    <td><img src="img/kerulet terulet.png" alt="Kerület-terület"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Az átmérő a kör középpontján átmenő húr. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/hur.gif" alt="Húr"></td>
+                </tr>
+                <tr>
+                    <td>Hogyan számoljuk ki a háromszög területét? </td>
+                    <td> a x ma/2</td>
+                    <td><img src="img/Haromszog-terulet.jpg" alt="Háromszög területe"></td>
+                </tr>
+            </table></div>
+        </div></div>
+      </section>
+
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse5" id="handle5" >
+        <h2 class="handle">
+            <label for="handle5">Nyelvtan</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2></td>
+                </tr>
+                <tr>
+                    <td>Hogyan írjuk helyesen ezt a szót? a, jáccik		b, játszik	c, játszcik</td>
+                    <td>b</td>
+                    <td><img src="img/jatszik.jpg" alt="Játszanak"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Az állítmányt 2 vonallal húzzuk alá a mondatban. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/allitmany-alany.png" alt="Állítmány"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A közneveket nagy kezdőbetűvel írjuk. </td>
+                    <td>Hamis</td>
+                    <td><img src="img/köznév.jpg" alt="Köznevek"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>A többszörösen összetett mondatok hány tagmondatból állnak?</td>
+                    <td>2 vagy több</td>
+                    <td><img src="img/tom.jpg" alt="Többszörösen összetett mondatok ágrajza"></td>
+                </tr>
+                <tr>
+                    <td>Hogyan írjuk helyesen?Hogyan írjuk helyesen? a, Nobel díj	b, Nobel-díj	c, Nóbel-díj</td>
+                    <td>b</td>
+                    <td><img src="img/nobel.jpg" alt="Nobel-díj"></td>
+                </tr>
+                <tr>
+                    <td>Peti aranyhala gyorsan úszik. Mi a mondat alanya? </td>
+                    <td>aranyhala</td>
+                    <td><img src="img/aranyhal.jpg" alt="Aranyhal"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A nyúlás magánhangzótörvény. </td>
+                    <td>Hamis</td>
+                    <td><img src="img/maganhangzo.jpg" alt="Magánhangzó törvények"></td>
+                </tr>
+                <tr>
+                    <td>A fényesebbik szóban az „ik” az milyen jel? </td>
+                    <td>Kiemelőjel</td>
+                    <td><img src="img/rag-jel.webp" alt="Jel"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A ragból csak egy lehet egy szóban. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/rag-jel.webp" alt="Rag"></td>
+                </tr>
+            </table></div>
+        </div></div>
+      </section>
+
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse6" id="handle6" >
+        <h2 class="handle">
+            <label for="handle6">Állatok</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A kutyák emlősök.</td>
+                    <td> Igaz</td>
+                    <td><img src="img/kutya.jpg" alt="Kutya"></td>
+                </tr>
+                <tr>
+                    <td>Milyen hangot ad ki a macska? </td>
+                    <td>Nyáu/Miáu</td>
+                    <td><img src="img/macska.jpg" alt="Macska"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A békák kétéltűek. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/béka.jpg" alt="Béka"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>Melyik a leggyorsabb szárazföldi emlős? </td>
+                    <td>Gepárd</td>
+                    <td><img src="img/gepard.jpg" alt="Gepárd"></td>
+                </tr>
+                <tr>
+                    <td>Melyik állatnak a neve a gyalogos átkelő másik neve? </td>
+                    <td> Zebra</td>
+                    <td><img src="img/zebra.jpg" alt="Zebra"></td>
+                </tr>
+                <tr>
+                    <td>Melyik kontinensen található a legtöbb medve?</td>
+                    <td>Észak-Amerika</td>
+                    <td><img src="img/eszakamerika.jpg" alt="Észak-Amerika"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A macskák érdes nyelve segít a tisztálkodásukban. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/nyelv.jpg" alt="Nyelve a macskáknak"></td>
+                </tr>
+                <tr>
+                    <td>Melyik madár volt Mátyás király jelképe? </td>
+                    <td> Holló</td>
+                    <td><img src="img/hollo.jpg" alt="Holló"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A pillangó fejlődése a következő sorrendben van: pete, báb, lárva, kifejlett 		rovar.</td>
+                    <td>Hamis</td>
+                    <td><img src="img/pillango.jpg" alt="Pillangó"></td>
+                </tr>
+            </table></div>
+        </div></div>
+            </section>
+
+            
+            <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse7" id="handle7">
+        <h2 class="handle">
+            <label for="handle7">Számítógépes alkatrészek</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mi a számítógép agya?</td>
+                    <td>Processzor</td>
+                    <td><img src="img/processzor.jpg" alt="Processzor"></td>
+                </tr>
+                <tr>
+                    <td>Minek a rövidítése a RAM? </td>
+                    <td>Random Access Memory</td>
+                    <td><img src="img/raam.jpg" alt="RAM"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A videókártyák két legnagyobb gyártója, az NVIDIA és az AMD.</td>
+                    <td>Igaz</td>
+                    <td><img src="img/nvidiaamd.jpg" alt="Nvidia vs Amd"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? Egy számítógépben lehet egy HDD és egy SSD is egyszerre. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/hdd ssd.jpg" alt="HDD - SSD"></td>
+                </tr>
+                <tr>
+                    <td>A billentyűzet be, vagy kimeneti eszköz? </td>
+                    <td>Bemeneti</td>
+                    <td><img src="img/billentyűzet.jpg" alt="Billentyűzet"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A számítógép működhet processzor nélkül is. </td>
+                    <td>Hamis</td>
+                    <td><img src="img/processzor.jpg" alt="Processzor"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Mit jelent az F jelölés a processzorok végén?</td>
+                    <td>Beépített grafikus vezérlő</td>
+                    <td><img src="img/intel f 2.jpg" alt="F"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A HDD teljes neve Hard Drive Disk. </td>
+                    <td>Hamis</td>
+                    <td><img src="img/hdd.jpg" alt="HDD"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A videókártyáknál a Ti elnevezés azt jelenti, hogy az adott termék továbbfejlesztett verziója. </td>
+                    <td> Igaz</td>
+                    <td><img src="img/ti.jpg" alt="Ti vs normal"></td>
+                </tr>
+            </table></div>
+        </div></div>
+      </section>
+
+      
+      <section class="accordion container-fluid">
+        <input type="checkbox" name="collapse8" id="handle8">
+        <h2 class="handle">
+            <label for="handle8">Ételek</label>
+        </h2>
+        <div class="content">
+            <div class="table-container">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Könnyű</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Melyik húsból szokták készíteni általában a gulyáslvest?</td>
+                    <td>Marhahús</td>
+                    <td><img src="img/gulyas.jpg" alt="Gulyásleves"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A burgonya keményítőt tartalmaz.</td>
+                    <td>Igaz</td>
+                    <td><img src="img/burgoyna.jpg" alt="burgonya"></td>
+                </tr>
+                <tr>
+                    <td>>Igaz vagy hamis? A répától megtanulhatsz fütyülni. </td>
+                    <td>Hamis</td>
+                    <td><img src="img/repa.jpg" alt="Répa"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Közepes</h2></td>
+                </tr>
+                <tr>
+                    <td>Miért mondják azt, hogy a paradicsom egy gyümölcs?</td>
+                    <td>A húsa miatt</td>
+                    <td><img src="img/paradicsom.jpg" alt="Paradicsom"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A fehérje segít az izomépítésben. </td>
+                    <td> Igaz</td>
+                    <td><img src="img/feherje.jpg" alt="Fehérje"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A szőlő nagy mértékben tartalmaz szénhidrátot. </td>
+                    <td>Igaz</td>
+                    <td><img src="img/szolo.jpg" alt="Szőlő"></td>
+                </tr>
+            </table></div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+            <table>
+                <tr>
+                    <td colspan="3"><h2>Nehéz</h2></td>
+                </tr>
+                <tr>
+                    <td>Milyen összetevőkből áll a palacsinta tészta? </td>
+                    <td>Liszt, tojás, tej, só esetleg víz és cukor</td>
+                    <td><img src="img/palacsinta.jpg" alt="palacsinta"></td>
+                </tr>
+                <tr>
+                    <td>Mi a burgonya gyakran használt elnevezése Erdélyben? </td>
+                    <td>Pityóka </td>
+                    <td><img src="img/burgoyna.jpg" alt="Pityóka"></td>
+                </tr>
+                <tr>
+                    <td>Igaz vagy hamis? A dió gyümölcs.</td>
+                    <td>Igaz</td>
+                    <td><img src="img/dio.jpg" alt="Dió"></td>
+                </tr>
+            </table></div>
+        </div></div>
+            </section>
+
+            <p class="text-center">Készítette: Timár Richárd</p>
+    </main>
+
+    
 </body>
 </html>
